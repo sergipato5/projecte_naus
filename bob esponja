@@ -1,0 +1,98 @@
+import pygame
+import sys
+from pygame.locals import *
+
+# Definir constantes
+AMPLE = 800
+ALT = 800
+TAMANY = (AMPLE, ALT)
+WIDTH = 320
+HIGH = 240
+CAPTION_TEXT = "LOLA INDITEX"
+RED = (255,0,0)
+GREEN = (0,255,0)
+BLUE = (0,0,255)
+INDIGO = (75, 0, 130)
+ORANGE = (255, 165, 0)
+YELLOW = (255,255,0)
+VIOLET = (148,0,211)
+GREY = (128,128,128)
+MARRON = (128,0,0)
+BLACK = (0,0,0)
+OLIVE = (134,139,73)
+CYAN = (0,255,255)
+PINK = (255,153,204)
+MAGENTA = (255,0,255)
+TAN = (210,180,140)
+TEAL = (0,128,128)
+WHITE = (255,255,255)
+DARK_YELLOW = (169,131,7)
+MID_DARK_YELLOW = (229,190,1)
+color = TEAL
+
+pygame.init()
+pantalla = pygame.display.set_mode(TAMANY)
+pygame.display.set_caption(CAPTION_TEXT)
+
+while True:  # Bucle principal del juego
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            sys.exit()
+
+    pantalla.fill(CYAN)
+
+    pygame.draw.rect(pantalla, YELLOW, (200, 200, 400, 400))
+    pygame.draw.circle(pantalla, WHITE, (300, 300), 50, 0)
+    pygame.draw.circle(pantalla, WHITE, (500, 300), 50, 0)
+    pygame.draw.circle(pantalla, BLUE, (300, 300), 25, 0)
+    pygame.draw.circle(pantalla, BLUE, (500, 300), 25, 0)
+    pygame.draw.circle(pantalla, BLACK, (300, 300), 10, 0)
+    pygame.draw.circle(pantalla, BLACK, (500, 300), 10, 0)
+    pygame.draw.line(pantalla, BLACK, (270, 220), (280, 253), 5)
+    pygame.draw.line(pantalla, BLACK, (330, 220), (320, 253), 5)
+    pygame.draw.line(pantalla, BLACK, (470, 220), (480, 253), 5)
+    pygame.draw.line(pantalla, BLACK, (530, 220), (520, 253), 5)
+    pygame.draw.polygon(pantalla, YELLOW, [(400, 320), (370, 400), (430, 400)])
+    pygame.draw.ellipse(pantalla, RED, (300, 500, 200, 100), 0)
+    pygame.draw.rect(pantalla, WHITE, (340, 520, 40, 40))
+    pygame.draw.rect(pantalla, WHITE, (420, 520, 40, 40))
+    pygame.draw.circle(pantalla, DARK_YELLOW, (275, 500), 20, 0)
+    pygame.draw.circle(pantalla, DARK_YELLOW, (550, 500), 25, 0)
+    pygame.draw.circle(pantalla, DARK_YELLOW, (325, 450), 20, 0)
+    pygame.draw.circle(pantalla, DARK_YELLOW, (470, 460), 25, 0)
+    pygame.draw.circle(pantalla, DARK_YELLOW, (250, 400), 25, 0)
+    pygame.draw.circle(pantalla, DARK_YELLOW, (550, 400), 20, 0)
+    pygame.draw.line(pantalla, BLACK, (300, 220), (300, 250), 5)
+    pygame.draw.line(pantalla, BLACK, (500, 220), (500, 250), 5)
+    pygame.draw.circle(pantalla, CYAN, (250, 165), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (300, 165), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (350, 165), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (400, 165), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (450, 165), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (500, 165), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (550, 165), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (165, 250), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (165, 300), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (165, 350), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (165, 400), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (165, 450), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (165, 500), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (165, 550), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (635, 250), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (635, 300), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (635, 350), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (635, 400), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (635, 450), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (635, 500), 40, 0)
+    pygame.draw.circle(pantalla, CYAN, (635, 550), 40, 0)
+    pygame.draw.circle(pantalla, MID_DARK_YELLOW, (500, 400), 25)
+    pygame.draw.rect(pantalla, MID_DARK_YELLOW, (400, 375, 100, 50))
+    pygame.draw.rect(pantalla, WHITE, (350, 10, 100, 200))
+    pygame.draw.rect(pantalla, BLUE, (340, 200, 120, 20))
+    pygame.draw.circle(pantalla, WHITE, (400, 60), 20)
+    pygame.draw.rect(pantalla, RED, (350, 10, 100, 190), 10)
+    pygame.draw.rect(pantalla, BLACK, (340, 200, 120, 20), 5)
+    pygame.draw.circle(pantalla, BLUE, (400, 60), 20, 5)
+    pygame.draw.rect(pantalla, BLACK, (390, 0, 25, 10))
+    pygame.display.update()
